@@ -1,0 +1,313 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+  --first: #e9f1fa;
+  --second: #00abe4;
+  --third: #fff;
+  --forth: #f2fafa;
+}
+
+.body-container {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--first);
+  color: var(--second);
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* font-family: "Kalnia", serif;
+   */
+  font-family: "Playfair Display", serif;
+}
+
+.header {
+  display: flex;
+  height: 10vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(var(--second), var(--first));
+  color: var(--third);
+  font-size: 90%;
+}
+
+.datesData {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  padding: 5vh;
+}
+
+.heading {
+  display: flex;
+  height: 10%;
+  width: 100%;
+  background-image: linear-gradient(var(--second), var(--third));
+  color: var(--third);
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.list-container {
+  display: block;
+  height: 85%;
+  width: 100%;
+  list-style: none;
+  overflow: scroll;
+  background-color: var(--third);
+  background-image: linear-gradient(var(--third), var(--forth));
+  border: solid 2px var(--first);
+  border-top: none;
+  padding: 2vh;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.special {
+  border: none;
+  background-image: linear-gradient(var(--third), var(--forth));
+  height: 90%;
+}
+
+.list-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 10%;
+  /* background-color: var(--third); */
+  background-image: linear-gradient(var(--third), var(--forth));
+  width: 100%;
+  /* border: solid 2px var(--second); */
+  border-top: 0px;
+  border-radius: 10px;
+}
+
+.delete-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+  border: none;
+  background-color: transparent;
+}
+
+.delete-btn img {
+  height: 100%;
+}
+.nodata {
+  display: flex;
+  background-image: linear-gradient(var(--third), var(--forth));
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: larger;
+}
+
+.main-form-container {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  padding: 5vh;
+}
+.form-container {
+  display: block;
+  height: 90%;
+  width: 100%;
+  list-style: none;
+  overflow: scroll;
+  /* background-color: var(--third); */
+}
+.form-row {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: var(--third);
+  padding: 2vh;
+  background-image: linear-gradient(var(--third), var(--forth));
+}
+.form-label {
+  display: flex;
+  height: 30%;
+  width: 100%;
+  font-size: 1.2em;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.form-input {
+  display: flex;
+  padding: 1vh;
+  font-size: 1rem;
+  color: #1877e4;
+  width: 100%;
+}
+.btn-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-image: linear-gradient(var(--forth), var(--third));
+  padding: 2vh;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.btn {
+  padding: 1vh;
+  font-size: 1rem;
+  background-color: var(--second);
+  color: var(--third);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 1vh;
+}
+.btn:hover {
+  background-color: #1877e4;
+}
+
+.reminder-container {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  padding: 5vh;
+}
+.month {
+  height: 50%;
+  background-color: var(--third);
+  padding: 2vh;
+  background-image: linear-gradient(var(--third), var(--forth));
+}
+
+.today {
+  height: 50%;
+  background-color: var(--third);
+  padding: 2vh;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-image: linear-gradient(var(--forth), var(--third));
+}
+.head {
+  height: 15%;
+  background-image: linear-gradient(var(--second), var(--third));
+  color: var(--third);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.box {
+  height: 100%;
+  width: 100%;
+}
+
+.list-items-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 20%;
+  background-color: var(--third);
+  width: 100%;
+  /* border: solid 2px var(--second); */
+  border-top: 0px;
+  border-radius: 10px;
+  background-image: linear-gradient(var(--third), var(--forth));
+}
+
+@media screen and (min-width: 700px) and (max-width: 1100px) {
+  .main-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-columns: 2;
+  }
+  .heading {
+    height: 20%;
+  }
+  .head {
+    height: 15%;
+  }
+  .datesData {
+    height: 45vh;
+    padding: 3vh 2vh;
+  }
+  .list-items {
+    height: 20%;
+  }
+  .main-form-container {
+    height: 45vh;
+    padding: 3vh 2vh;
+  }
+  .nodata {
+    height: 98%;
+  }
+  .list-container {
+    height: 100%;
+    background-color: var(--third);
+  }
+
+  .reminder-container {
+    height: 45vh;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* padding-top: 0; */
+  }
+  .box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .month {
+    height: 100%;
+    border-bottom-left-radius: 20px;
+  }
+  .today {
+    height: 100%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    background-image: linear-gradient(var(--third), var(--forth));
+  }
+  .form-container {
+    background-color: var(--third);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .btn {
+    margin-top: 0px;
+  }
+  .btn-container {
+    padding-bottom: 0px;
+    padding-top: 1vh;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  .main-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .header {
+    font-size: 12px;
+  }
+  .main-form-container {
+    height: 100vh;
+  }
+  .datesData {
+    height: 100vh;
+    background-color: var(--first);
+  }
+}
