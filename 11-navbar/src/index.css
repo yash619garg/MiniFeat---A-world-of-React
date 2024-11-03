@@ -1,0 +1,130 @@
+/* new css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(227, 237, 233);
+  /* background-color: #659dbd; */
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  padding: 20px 50px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c1e8d0;
+}
+.page-links {
+  height: auto;
+  /* min-width: 900px; */
+}
+.list-container {
+  display: flex;
+  /* margin-bottom: 30px; */
+}
+.list-container li {
+  list-style: none;
+  margin-right: 22px;
+  font-size: 22px;
+}
+.list-container li a {
+  text-decoration: none;
+  /* color: rgb(80, 108, 184); */
+  color: #379683;
+}
+.button {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  font-size: 19px;
+  color: #379683;
+}
+.headIcon {
+  font-size: 40px;
+}
+
+.icon {
+  margin-right: 5px;
+}
+.icon a {
+  font-size: 24px;
+  color: #379683;
+}
+
+@media screen and (max-width: 900px) {
+  .social-links {
+    display: none;
+  }
+  .navbar {
+    flex-direction: column;
+    padding: 0px;
+  }
+  .toggle-icon {
+    display: flex;
+  }
+  .logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+  }
+  .page-links {
+    width: 100%;
+    overflow: hidden;
+    height: 0px;
+    transition: all 1s ease-in-out;
+  }
+  .list-container {
+    padding: 10px 2px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    align-items: flex-start;
+  }
+  .btn {
+    background-color: transparent;
+    border: none;
+  }
+  .button {
+    display: flex;
+  }
+  .toggle-icon {
+    display: flex;
+    font-size: 25px;
+    color: #379683;
+  }
+  .list-items {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 3px 8px;
+  }
+  .list-items:hover {
+    background-color: #c1e8d0;
+  }
+  .list-items a {
+    font-size: 15px;
+  }
+  .active {
+    transform: rotate(90deg);
+    transition: all 0.5s ease-in-out;
+  }
+}
